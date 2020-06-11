@@ -11,13 +11,13 @@
 ;
 
 (ns clj-middleware.middleware
-    "Definition(s) of middleware used with the cooperation with Clojure Ring.")
+  "Definition(s) of middleware used with the cooperation with Clojure Ring.")
 
 (defn inject-configuration
-    "Inject configuration structure into the request parameter.
+  "Inject configuration structure into the request parameter.
      It means that the process request -> emender-waive -> response could be implemented
      in a functional way."
-    [handler configuration]
-    (fn [request]
-        (handler (assoc request :configuration configuration))))
+  [handler configuration]
+  (fn [request]
+    (handler (assoc request :configuration configuration))))
 
