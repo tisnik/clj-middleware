@@ -44,7 +44,9 @@
              (are [x y] (= x y)
                   {:configuration :cfg} (function nil)
                   {:configuration :cfg} (function {})
-                  {:configuration :cfg, :foo :bar} (function {:foo :bar})))))
+                  {:configuration :cfg, :foo :bar} (function {:foo :bar})
+                  ; configuration need to be replaced
+                  {:configuration :cfg, :foo :bar} (function {:foo :bar :configuration :old})))))
 
 (deftest test-inject-configuration-2
   "Check the behaviour of function clj-middleware.middleware/inject-configuration."
@@ -54,7 +56,8 @@
                   nil (function nil)
                   nil (function {})
                   nil (function {:foo :bar})
-                  nil (function {:foo :bar, :baz :bar})))))
+                  nil (function {:foo :bar, :baz :bar})
+                  nil (function {:foo :bar, :configuration :old})))))
 
 (deftest test-inject-configuration-not-NPE
   "Check the behaviour of function clj-middleware.middleware/inject-configuration."
@@ -63,5 +66,7 @@
              (are [x y] (= x y)
                   {:configuration nil} (function nil)
                   {:configuration nil} (function {})
-                  {:configuration nil, :foo :bar} (function {:foo :bar})))))
+                  {:configuration nil, :foo :bar} (function {:foo :bar})
+                  ; configuration need to be replaced
+                  {:configuration nil, :foo :bar} (function {:foo :bar :configuration :old})))))
 
