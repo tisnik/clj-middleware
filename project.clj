@@ -19,6 +19,7 @@
   :plugins [[lein-codox "0.10.7"]
             [test2junit "1.1.0"]
             ;[lein-test-out "0.3.1"]
-            [lein-cloverage "1.0.7-SNAPSHOT"]]
+            [lein-cloverage "1.0.7-SNAPSHOT"]
+            [lein-marginalia "0.9.1"]])
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
