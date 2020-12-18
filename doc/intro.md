@@ -1,3 +1,3 @@
 # Introduction to clj-middleware
 
-TODO: write [great documentation](http://jacobian.org/writing/what-to-write/)
+Simple Ring middleware to inject configuration structure into the request parameter
