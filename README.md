@@ -6,7 +6,7 @@
 
 [Coverage report](https://tisnik.github.io/clj-middleware/coverage/cov.html)
 
-[Depencendies](doc/dependencies.clj)
+[Dependencies](doc/dependencies.clj)
 
 [Project details](doc/details.clj)
 
