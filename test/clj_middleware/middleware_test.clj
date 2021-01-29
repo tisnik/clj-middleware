@@ -1,5 +1,5 @@
 ;
-;  (C) Copyright 2018, 2020  Pavel Tisnovsky
+;  (C) Copyright 2018, 2020, 2021  Pavel Tisnovsky
 ;
 ;  All rights reserved. This program and the accompanying materials
 ;  are made available under the terms of the Eclipse Public License v1.0
@@ -28,7 +28,7 @@
 ;
 
 (deftest test-inject-configuration-existence
-  "Check that the clj-middleware.middleware/inject-configuration definition exists."
+  "Check that the clj-middleware.middleware/inject-configuration function definition exists."
   (testing
     "if the clj-middleware.middleware/inject-configuration definition exists."
     (is (callable? 'clj-middleware.middleware/inject-configuration))))
