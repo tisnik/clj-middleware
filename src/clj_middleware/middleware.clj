@@ -1,5 +1,5 @@
 ;
-;  (C) Copyright 2018, 2020  Pavel Tisnovsky
+;  (C) Copyright 2018, 2020, 2021  Pavel Tisnovsky
 ;
 ;  All rights reserved. This program and the accompanying materials
 ;  are made available under the terms of the Eclipse Public License v1.0
@@ -11,7 +11,7 @@
 ;
 
 (ns clj-middleware.middleware
-  "Definition(s) of middleware used with the cooperation with Clojure Ring.")
+  "Definition(s) of middleware used with the cooperation with Clojure Ring library.")
 
 (defn inject-configuration
   "Inject configuration structure into the request parameter.
